@@ -26,6 +26,8 @@
 }
 
 .square{
+    box-sizing: border-box;
+    background-color: white;
     border-width: 2px;
     border-style: solid;
 }

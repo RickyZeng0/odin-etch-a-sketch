@@ -30,8 +30,6 @@ function highlightSquare(event){
 function createSquare(n){
     for(let i=1 ; i<=n*n ; i++){
         const square = document.createElement("div");
-        square.style.backgroundColor = "white";
-        square.style.boxSizing = "border-box";
         square.style.width = `${1/n *100}%`;
         square.style.height = `${1/n *100}%`;
         square.classList.add("square");
