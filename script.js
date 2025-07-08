@@ -32,12 +32,13 @@ function getSquareWidth(noOfSquare){
 
 //create total n*n squares 
 function createSquare(n){
-    for(let i=1 ; i<=n ; i++){
+    for(let i=1 ; i<=n*n ; i++){
         const square = document.createElement("div");
         const squareLength = getSquareWidth(n)
         square.style.backgroundColor = "white";
         square.style.width = `${squareLength}px`;
         square.style.height = `${squareLength}px`;
+        square.style.display = "inline-block";
         squareContainer.appendChild(square);    
     }
 }
