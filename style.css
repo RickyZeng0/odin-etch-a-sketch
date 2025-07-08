@@ -21,5 +21,6 @@
     background-color: gold;
     border-width: 5px;
     border-style: solid;
-    font-size: 0px;
+    display: flex;
+    flex-wrap: wrap;
 }

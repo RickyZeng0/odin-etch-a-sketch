@@ -38,7 +38,6 @@ function createSquare(n){
         square.style.backgroundColor = "white";
         square.style.width = `${squareLength}px`;
         square.style.height = `${squareLength}px`;
-        square.style.display = "inline-block";
         squareContainer.appendChild(square);    
     }
 }
