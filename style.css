@@ -24,3 +24,8 @@
     display: flex;
     flex-wrap: wrap;
 }
+
+.square{
+    border-width: 2px;
+    border-style: solid;
+}

@@ -36,8 +36,10 @@ function createSquare(n){
         const square = document.createElement("div");
         const squareLength = getSquareWidth(n)
         square.style.backgroundColor = "white";
+        square.style.boxSizing = "border-box";
         square.style.width = `${squareLength}px`;
         square.style.height = `${squareLength}px`;
+        square.classList.add("square");
         squareContainer.appendChild(square);    
     }
 }
