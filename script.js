@@ -51,3 +51,6 @@ noButton.addEventListener("click",function(){
     removeAllSquare();
     createSquare(noOfSqure);
 });
+
+//start here
+createSquare(16);
