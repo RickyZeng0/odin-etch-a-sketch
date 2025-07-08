@@ -22,23 +22,14 @@ function getValidInput(){
     return input;
 }
 
-function getSquareWidth(noOfSquare){
-    const compSytles = window.getComputedStyle(squareContainer);
-    const widthValue = compSytles.getPropertyValue("width");
-    const widthString = widthValue.slice(0, widthValue.length -2) 
-    const width = Number(widthString)/noOfSquare;
-    return width;
-}
-
 //create total n*n squares 
 function createSquare(n){
     for(let i=1 ; i<=n*n ; i++){
         const square = document.createElement("div");
-        const squareLength = getSquareWidth(n)
         square.style.backgroundColor = "white";
         square.style.boxSizing = "border-box";
-        square.style.width = `${squareLength}px`;
-        square.style.height = `${squareLength}px`;
+        square.style.width = `${1/n *100}%`;
+        square.style.height = `${1/n *100}%`;
         square.classList.add("square");
         squareContainer.appendChild(square);    
     }
