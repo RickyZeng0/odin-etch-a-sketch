@@ -4,6 +4,16 @@
     align-items: center;
 }
 
+.control-container{
+    display: flex;
+    gap: 20px;
+}
+
+.button-container{
+    display: flex;
+    align-items: center;
+}
+
 .grid-container{
     width: 550px;
     height: 550px;
