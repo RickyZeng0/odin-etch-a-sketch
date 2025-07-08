@@ -22,22 +22,24 @@ function getValidInput(){
     return input;
 }
 
-function getSquareWidth(noOfSqure){
+function getSquareWidth(noOfSquare){
     const compSytles = window.getComputedStyle(squareContainer);
     const widthValue = compSytles.getPropertyValue("width");
     const widthString = widthValue.slice(0, widthValue.length -2) 
-    const width = Number(widthString);
+    const width = Number(widthString)/noOfSquare;
     return width;
 }
 
 //create total n*n squares 
 function createSquare(n){
-
-    const square = document.createElement("div");
-    square.style.backgroundColor = "white";
-
-    squareContainer.appendChild(square);
-
+    for(let i=1 ; i<=n ; i++){
+        const square = document.createElement("div");
+        const squareLength = getSquareWidth(n)
+        square.style.backgroundColor = "white";
+        square.style.width = `${squareLength}px`;
+        square.style.height = `${squareLength}px`;
+        squareContainer.appendChild(square);    
+    }
 }
 
 noButton.addEventListener("click",function(){
