@@ -1,4 +1,5 @@
 const noButton = document.querySelector(".no-button");
+const squareContainer = document.querySelector(".square-container");
 
 function getValidInput(){
     const LOWER_LIMIT = 1;
@@ -21,6 +22,14 @@ function getValidInput(){
     return input;
 }
 
+//create total n*n squares 
+function createSquare(n){
+    const compSytles = window.getComputedStyle(squareContainer);
+    const squareLength = compSytles.getPropertyValue("width");
+
+}
+
 noButton.addEventListener("click",function(){
     getValidInput();
+    createSquare(1);
 });

@@ -14,8 +14,9 @@
     align-items: center;
 }
 
-.grid-container{
+.square-container{
     width: 550px;
     height: 550px;
+    flex-shrink:0;
     background-color: black;
 }
